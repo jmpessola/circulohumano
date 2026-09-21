@@ -3,20 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Círculo Humano — un espacio de transformación para salir del automático y vivir con libertad. Encuentros en vivo, comunidad y cursos con Matías Rebozov.">
-  <meta property="og:title" content="Círculo Humano — Un espacio de transformación">
-  <meta property="og:description" content="Renunciar a lo que no te representa para descubrir tu potencial, es posible.">
+  <meta name="description" content="Círculo Humano — te acompañamos a encontrar el verdadero propósito y dirección de tu vida, desde un lugar que puedas sostener en el tiempo. Encuentros en vivo cada sábado, presenciales y online. Con Matías Rebozov y equipo.">
+  <meta property="og:title" content="Círculo Humano — Empezá este viaje">
+  <meta property="og:description" content="Te acompañamos a encontrar el verdadero propósito y dirección de tu vida desde un lugar que puedas sostener en el tiempo y que te represente.">
   <meta property="og:image" content="assets/landing/hero-retreat.jpg">
-  <title>Círculo Humano — Un espacio de transformación · Matías Rebozov</title>
+  <title>Círculo Humano — Empezá este viaje · Matías Rebozov</title>
   <link rel="icon" type="image/png" href="assets/brand/favicon.png">
+  <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Jost:wght@200;300;400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
   <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="stylesheet" href="assets/css/landing.css">
+  <link rel="stylesheet" href="assets/css/landing.css?v=10">
 </head>
 <body>
 
@@ -27,17 +28,17 @@
   <!-- ===== NAVIGATION ===== -->
   <nav class="nav" id="nav">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo">
-        <img src="assets/brand/ouroboros-gold.png" alt="MR" class="nav-logo-img">
+      <a href="index.html" class="nav-logo" aria-label="Círculo Humano — inicio">
+        <img src="assets/brand/iso-ch.png" alt="" class="nav-logo-img">
         <span class="nav-logo-text">Círculo Humano</span>
       </a>
       <div class="nav-links" id="nav-links">
-        <a href="index.html">Inicio</a>
-        <a href="#que-es">Qué es</a>
-        <a href="#mati">Quién acompaña</a>
-        <a href="#incluye">Encuentros</a>
-        <a href="#voces">Voces</a>
-        <a href="membresia.html" class="btn btn--gold" style="padding:.55rem 1.4rem;">Quiero formar parte</a>
+        <a href="#acompanamiento">Acompañamiento</a>
+        <a href="#de-que-se-trata">De qué se trata</a>
+        <a href="#matias">Quién acompaña</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#acompanamiento" class="btn btn--gold nav-cta">Quiero formar parte</a>
       </div>
       <button class="nav-toggle" id="nav-toggle" aria-label="Menú">
         <span></span><span></span><span></span>
@@ -45,68 +46,105 @@
     </div>
   </nav>
 
-  <!-- ===== HERO ===== -->
-  <header class="lhero">
+  <!-- ===== 2 · HERO · INICIO ===== -->
+  <header class="lhero" id="inicio">
     <div class="lhero-bg">
       <video class="lhero-video" autoplay muted loop playsinline preload="auto" poster="assets/landing/ambient-sunset.jpg">
         <source src="assets/landing/ambient-sunset.mp4" type="video/mp4">
       </video>
       <div class="lhero-overlay"></div>
     </div>
-    <div class="lhero-watermark" aria-hidden="true"><img src="assets/brand/ouroboros-gold.png" alt=""></div>
+    <div class="lhero-watermark" aria-hidden="true"><img src="assets/brand/iso-ch.png" alt=""></div>
     <div class="lhero-content">
       <div class="lhero-inner">
-        <p class="lhero-eyebrow">Círculo Humano · Academia</p>
-        <h1 class="lhero-title">Renunciar a lo que no te representa para descubrir tu potencial, <em>es posible.</em></h1>
-        <p class="lhero-sub">Sé lo desesperante que es tener esto en la cabeza durante años. Sé también lo solitaria y confusa que puede ser esta búsqueda. No es necesario vivir este proceso en soledad.</p>
+        <p class="lhero-eyebrow">Círculo Humano · La comunidad</p>
+        <h1 class="lhero-title lhero-title--long">Te acompañamos a encontrar el verdadero propósito y dirección de tu vida desde un lugar que puedas <em>sostener en el tiempo</em> y que te represente.</h1>
+        <p class="lhero-sub">Sé lo desesperante que es buscar dirección con la cabeza durante tantos años y sé también lo solitario y confuso que puede ser esta búsqueda. No es necesario vivir este proceso en soledad. El Círculo Humano va a darte la claridad que estás buscando y la velocidad que te merecés.</p>
         <div class="lhero-cta-row">
-          <a href="membresia.html#sumarme" class="btn btn--gold btn--lg">Quiero formar parte</a>
-          <a href="#video" class="btn btn--outline btn--lg">Mirá el video</a>
+          <a href="#acompanamiento" class="btn btn--gold btn--lg">Quiero formar parte</a>
+          <a href="#de-que-se-trata" class="btn btn--outline btn--lg">¿De qué se trata?</a>
         </div>
       </div>
     </div>
-    <a href="#video" class="hero-scroll" aria-label="Desplazarse"><span class="scroll-line"></span></a>
+    <a href="#acompanamiento" class="hero-scroll" aria-label="Desplazarse"><span class="scroll-line"></span></a>
   </header>
 
-  <!-- ===== VIDEO ===== -->
-  <section id="video" class="lsec lsec--deep">
+  <!-- ===== 3 y 4 · ACOMPAÑAMIENTO CÍRCULO HUMANO ===== -->
+  <!-- ancla vieja: el link publicado membresia.html redirige acá -->
+  <span id="membresia" class="anchor-alias" aria-hidden="true"></span>
+  <section id="acompanamiento" class="lsec lsec--deep">
     <div class="section-header" data-aos="fade-up">
-      <p class="label">Mirá el video</p>
-      <p class="lead lead--center">Círculo Humano es un espacio para personas que no están dispuestas a resignarse y desean crear una vida más auténtica.</p>
+      <p class="label">Acompañamiento Círculo Humano</p>
+      <h2 class="title-light">Empezá <em>este viaje.</em></h2>
+    </div>
+
+    <div class="member-wrap" data-aos="fade-up" data-aos-delay="100">
+      <div class="member-card">
+        <img src="assets/brand/logo-ch.png" alt="" class="member-logo">
+        <h3>Acompañamiento del Círculo Humano</h3>
+        <p class="lead">Si tu vida actual te frustra y sentís que estás en una búsqueda mental constante, este espacio es para vos y podés sumarte hoy.</p>
+
+        <p class="member-list-title">Qué incluye</p>
+        <ul class="member-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m5 12 5 5L20 6"/></svg> Sesión de bienvenida personalizada con Matías Rebozov</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m5 12 5 5L20 6"/></svg> Encuentros en vivo todos los sábados, presenciales y online</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m5 12 5 5L20 6"/></svg> Acceso a todas las grabaciones</li>
+          <!-- PENDIENTE (punto 4): confirmar qué cursos esenciales se nombran por nombre -->
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m5 12 5 5L20 6"/></svg> Acceso a los cursos esenciales</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m5 12 5 5L20 6"/></svg> Comunidad</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m5 12 5 5L20 6"/></svg> Acompañamiento 24/7</li>
+        </ul>
+
+        <a href="#contacto" class="member-cta js-wa">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.39a9.86 9.86 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.44 9.9-9.9 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m0 1.67c2.2 0 4.27.86 5.82 2.42a8.19 8.19 0 0 1 2.42 5.82c0 4.54-3.7 8.23-8.24 8.23-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.05-.2-.31a8.2 8.2 0 0 1-1.26-4.37c0-4.54 3.7-8.23 8.25-8.23M8.53 7.33c-.16 0-.43.06-.66.31-.22.25-.87.85-.87 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.46-.6 1.67-1.18.2-.58.2-1.07.14-1.18-.06-.1-.22-.16-.47-.28-.24-.13-1.46-.72-1.68-.8-.23-.09-.4-.13-.56.12-.17.25-.64.8-.79.97-.14.17-.29.19-.53.07-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.24-.02-.37.11-.5.11-.11.24-.29.37-.43.12-.14.16-.25.24-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.76-1.85-.2-.48-.4-.42-.56-.43h-.47Z"/></svg>
+          Quiero sumarme al acompañamiento grupal
+        </a>
+        <p class="member-reassure">No tenés que tener todo claro. Solo se necesita dar un paso.</p>
+        <p class="mp-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Te respondemos por WhatsApp y coordinamos el pago según tu país</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 6 · ¿DE QUÉ SE TRATA? (intro + video) ===== -->
+  <section id="de-que-se-trata" class="lsec lsec--dark">
+    <div class="section-header" data-aos="fade-up">
+      <p class="label">¿De qué se trata?</p>
+      <p class="lead lead--center">Círculo Humano es un espacio transformador para personas que no están dispuestas a vivir una vida de frustración y desean crear una dirección próspera y auténtica.</p>
     </div>
     <div class="video-feature" data-aos="fade-up" data-aos-delay="100">
+      <!-- PENDIENTE (punto 6): el ID del video nuevo se carga desde assets/js/landing.js -> VIDEO_ID -->
       <div class="yt-lite" data-id="z8m3bAemaPc" role="button" tabindex="0" aria-label="Reproducir video de presentación">
         <button class="yt-play" aria-label="Reproducir">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
         </button>
       </div>
-      <p class="video-caption">Una mirada a lo que vivimos cada semana en el Círculo.</p>
+      <p class="video-caption">Una explicación de pocos minutos para entender qué podés esperar de esta experiencia.</p>
     </div>
   </section>
 
-  <!-- ===== ¿QUÉ ES? ===== -->
-  <section id="que-es" class="lsec lsec--dark statement">
-    <div class="statement-mark" aria-hidden="true"><img src="assets/brand/ouroboros-gold.png" alt="" class="spinning-ouroboros"></div>
+  <!-- ===== 7 · QUÉ ES CÍRCULO HUMANO ===== -->
+  <section id="que-es" class="lsec lsec--deep statement">
+    <div class="statement-mark" aria-hidden="true"><img src="assets/brand/iso-ch.png" alt="" class="spinning-ouroboros"></div>
     <div class="statement-inner" data-aos="fade-up">
-      <p class="label label--centered">¿Qué es el Círculo Humano?</p>
-      <p class="statement-quote">No es un curso. Es un <em>espacio de transformación.</em> Una frecuencia para salir del automático y empezar a vivir con libertad.</p>
+      <h2 class="statement-title title-light">No es un curso.<br><em>Es un espacio de transformación.</em></h2>
       <div class="ornament-line"></div>
-      <p class="philosophy-body">Un espacio para conectar con personas que se hacen las mismas preguntas. Llegó el momento de dejar de sostener historias que no nos representan. Círculo Humano es una oportunidad para detenerse, observar distinto y descubrir que lo que buscamos está más cerca de lo que jamás imaginamos.</p>
+      <p class="statement-quote">Una frecuencia para recuperar <em>claridad y dirección</em> desde un lugar auténtico, libre y con propósito.</p>
+      <p class="philosophy-body">Un espacio para conectar con personas que se hacen las mismas preguntas. Llegó el momento de dejar de sostener historias que no nos representan. El Círculo Humano es una oportunidad para recuperar claridad, energía, foco y descubrir para qué nacimos en realidad.</p>
     </div>
   </section>
 
-  <!-- ===== QUIÉN ACOMPAÑA ===== -->
-  <section id="mati" class="lsec lsec--deep">
+  <!-- ===== 8 · QUIÉN ACOMPAÑA ESTE PROCESO ===== -->
+  <section id="matias" class="lsec lsec--dark">
     <div class="split">
       <div class="split-media" data-aos="fade-right" data-aos-duration="1000">
         <img src="assets/landing/matias-portrait.jpg" alt="Matías Rebozov">
       </div>
       <div class="split-text" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="150">
-        <p class="label">Quién acompaña este espacio</p>
-        <h2 class="title-light">Matías <em>Rebozov</em></h2>
-        <p class="split-credit">Economista, coach de vida y fundador de la Academia Círculo Humano. Junto a un equipo de profesionales.</p>
-        <p class="muted-body">Matías se dedicaba a la economía y a los 32 años decidió saltar al vacío para dedicarse a su pasión. Esa transformación tuvo como resultado la creación de este espacio: acompañar a cientos de personas a hacer lo mismo, de una forma amorosa y cuidada.</p>
-        <p class="muted-body">Para quienes sienten que el cambio verdadero necesita continuidad, práctica y sostén.</p>
+        <p class="label">¿Quién acompaña este proceso?</p>
+        <h2 class="title-light">Matías Rebozov<br><em>y equipo.</em></h2>
+        <p class="muted-body">Matías se dedicó a la economía hasta los 32 años, cuando decidió soltarlo todo y aparecieron preguntas como: ¿para qué nací?, ¿para qué soy bueno?, ¿cómo puedo ser útil para los demás?, ¿quién soy?</p>
+        <p class="muted-body">En esa profunda autoindagación apareció el coaching como una forma de acompañar a personas que se ahogan en esas mismas preguntas.</p>
+        <p class="muted-body">Esa transformación tuvo como resultado la creación de este espacio, que ya acompañó a cientos de personas a encontrar una dirección auténtica y propia, desde un lugar que puedan sostener en el tiempo. Porque el cambio verdadero necesita continuidad, práctica y sostén.</p>
         <div class="highlight-stat">
           <span class="stat-num" data-target="300">0</span>
           <span>+ almas impactadas</span>
@@ -115,44 +153,48 @@
     </div>
   </section>
 
-  <!-- ===== ¿QUÉ VAS A ENCONTRAR? ===== -->
-  <section id="incluye" class="lsec lsec--dark">
+  <!-- ===== 9 · QUÉ VAS A ENCONTRAR ===== -->
+  <section id="incluye" class="lsec lsec--deep">
     <div class="section-header" data-aos="fade-up">
       <p class="label">Qué vas a encontrar</p>
       <h2 class="title-light">Todo lo que incluye<br><em>el Círculo.</em></h2>
     </div>
-    <div class="feature-wrap">
-      <div class="feature-list">
+    <div class="feature-wrap feature-wrap--wide">
+      <div class="feature-list feature-list--three">
         <div class="feature-item" data-aos="fade-up">
           <span class="feature-bullet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
-          <div><h4>Sesión de bienvenida</h4><p>Un encuentro con Mati Rebozov para comprender dónde estás y cómo acompañarte.</p></div>
+          <div><h4>Sesión de bienvenida personalizada</h4><p>Un encuentro con Matías Rebozov para comprender dónde estás y cómo acompañarte.</p></div>
         </div>
         <div class="feature-item" data-aos="fade-up" data-aos-delay="80">
           <span class="feature-bullet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
-          <div><h4>Encuentros en vivo</h4><p>Todos los sábados de 10:00 a 11:30 hs (Argentina), presenciales y online.</p></div>
+          <div><h4>Encuentros en vivo todos los sábados</h4><p>Un espacio semanal fijo al que volver, sin sentir que empezás de cero.</p></div>
+        </div>
+        <div class="feature-item" data-aos="fade-up" data-aos-delay="160">
+          <span class="feature-bullet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2.5" y="5" width="8" height="13" rx="1.2"/><rect x="13.5" y="5" width="8" height="13" rx="1.2"/><path d="M11.4 11.5h1.2"/></svg></span>
+          <div><h4>Presencial + online</h4><p>Participás desde donde estés, o en persona cuando puedas estar.</p></div>
         </div>
         <div class="feature-item" data-aos="fade-up">
           <span class="feature-bullet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><polygon points="5 3 19 12 5 21 5 3"/></svg></span>
-          <div><h4>Todas las grabaciones</h4><p>Acceso completo para volver a cada encuentro cuando lo necesites.</p></div>
+          <div><h4>Acceso a las grabaciones</h4><p>Volvés a cada encuentro cuando lo necesites, a tu ritmo.</p></div>
         </div>
         <div class="feature-item" data-aos="fade-up" data-aos-delay="80">
-          <span class="feature-bullet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="9" cy="8" r="3.2"/><path d="M2.5 20c0-3.3 2.9-5.6 6.5-5.6s6.5 2.3 6.5 5.6"/><path d="M16 5.2a3.2 3.2 0 0 1 0 6M21.5 20c0-2.7-1.6-4.7-4-5.4"/></svg></span>
-          <div><h4>Una comunidad real</h4><p>Un círculo de personas comprometidas con vivir desde la autenticidad y la coherencia.</p></div>
+          <span class="feature-bullet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 1 6.5 18H20v3H6.5"/></svg></span>
+          <div><h4>Acceso completo a los cursos esenciales</h4><p>La práctica llevada más lejos, a tu ritmo, incluida en el acompañamiento.</p></div>
         </div>
-      </div>
-
-      <div class="courses-card" data-aos="fade-up">
-        <p class="label">Acceso completo a los cursos</p>
-        <div class="courses-list">
-          <span class="course-tag">Las 4 claves para ser libre</span>
-          <span class="course-tag">Las 7 leyes para vivir de tu propósito</span>
+        <div class="feature-item" data-aos="fade-up" data-aos-delay="160">
+          <span class="feature-bullet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="9" cy="8" r="3.2"/><path d="M2.5 20c0-3.3 2.9-5.6 6.5-5.6s6.5 2.3 6.5 5.6"/><path d="M16 5.2a3.2 3.2 0 0 1 0 6M21.5 20c0-2.7-1.6-4.7-4-5.4"/></svg></span>
+          <div><h4>Comunidad</h4><p>Personas que se hacen las mismas preguntas y caminan el mismo proceso.</p></div>
+        </div>
+        <div class="feature-item feature-item--wide" data-aos="fade-up">
+          <span class="feature-bullet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 1.8"/><path d="M12 1.8v1.6M12 20.6v1.6M1.8 12h1.6M20.6 12h1.6"/></svg></span>
+          <div><h4>Acompañamiento 24/7</h4><p>No tenés que esperar al sábado: el sostén está disponible cuando lo necesitás.</p></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== REELS ===== -->
-  <section class="lsec lsec--deep lsec--tight reel-strip-wrap">
+  <!-- ===== 10 · EN MOVIMIENTO / MOMENTOS DEL CÍRCULO ===== -->
+  <section id="momentos" class="lsec lsec--dark lsec--tight reel-strip-wrap">
     <div class="section-header" data-aos="fade-up">
       <p class="label">En movimiento</p>
       <h2 class="title-light">Momentos del <em>Círculo.</em></h2>
@@ -175,90 +217,194 @@
         <button class="reel-mute" aria-label="Activar sonido"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M11 5 6 9H2v6h4l5 4z"/><path d="m22 9-6 6M16 9l6 6"/></svg></button>
       </figure>
     </div>
+
+    <!-- Galería de fotos. PENDIENTE (punto 10): reemplazar / sumar con las fotos nuevas.
+         Para agregar una foto: copiala a assets/landing/ y duplicá un <figure> de abajo.
+         Las clases .m-wide y .m-tall controlan el tamaño dentro de la grilla. -->
+    <div class="moments-grid" data-aos="fade-up">
+      <figure class="moment m-wide"><img src="assets/landing/event-big.jpg" alt="Encuentro del Círculo Humano" loading="lazy"></figure>
+      <figure class="moment m-tall"><img src="assets/landing/group-lake.jpg" alt="Grupo del Círculo Humano en la naturaleza" loading="lazy"></figure>
+      <figure class="moment"><img src="assets/landing/abrazo.jpg" alt="Abrazo en un encuentro" loading="lazy"></figure>
+      <figure class="moment m-tall"><img src="assets/landing/community.jpg" alt="Comunidad del Círculo Humano" loading="lazy"></figure>
+      <figure class="moment"><img src="assets/landing/circle-grass.jpg" alt="Círculo al aire libre" loading="lazy"></figure>
+      <figure class="moment m-tall"><img src="assets/landing/event-warm.jpg" alt="Momento de encuentro" loading="lazy"></figure>
+      <figure class="moment"><img src="assets/landing/abrazo-2.jpg" alt="Encuentro entre participantes" loading="lazy"></figure>
+      <figure class="moment m-wide"><img src="assets/landing/event-candid.jpg" alt="Participantes durante un encuentro" loading="lazy"></figure>
+      <figure class="moment m-tall"><img src="assets/landing/community-2.jpg" alt="Comunidad reunida" loading="lazy"></figure>
+      <figure class="moment"><img src="assets/landing/matias-speaking.jpg" alt="Matías Rebozov durante un encuentro" loading="lazy"></figure>
+    </div>
   </section>
 
-  <!-- ===== NO ES TERAPIA TRADICIONAL ===== -->
+  <!-- ===== 11 · ESTO NO ES TERAPIA TRADICIONAL ===== -->
   <section class="quote-band">
-    <div class="quote-band-mark" aria-hidden="true"><img src="assets/brand/ouroboros-gold.png" alt="" class="spinning-ouroboros"></div>
+    <div class="quote-band-mark" aria-hidden="true"><img src="assets/brand/iso-ch.png" alt="" class="spinning-ouroboros"></div>
     <div class="quote-band-inner" data-aos="fade-up">
       <p class="label label--centered">Esto no es terapia tradicional</p>
       <div class="ornament-line"></div>
-      <p class="quote-band-text">Basta de buscar el porqué una y otra vez. Basta de procesos eternos hablando de lo mismo. Es hora de <em>mirarnos con honestidad</em>, compartiendo el camino de manera amorosa, cuidada y divertida — para que aparezcan las respuestas que una mente sola nunca encontraría.</p>
+      <p class="quote-band-text">Basta de buscar el porqué una y otra vez. Basta de procesos eternos hablando de lo mismo. Es hora de <em>mirarnos con honestidad</em>, compartiendo el camino de manera amorosa, cuidada y divertida, para que aparezcan las respuestas que una mente sola nunca encontraría.</p>
       <div class="ornament-line"></div>
     </div>
   </section>
 
-  <!-- ===== VOCES DEL PROCESO ===== -->
-  <section id="voces" class="testimonials">
+  <!-- ===== 12 · LO QUE PASA DENTRO DEL CÍRCULO (testimonios) =====
+       PENDIENTE: las 6 citas, los nombres y las fotos son PLACEHOLDER.
+       Cada tarjeta ya viene rotulada con el dolor que tiene que responder.
+       Para completar una:
+         1. foto → assets/landing/testimonios/01.jpg (recorte cuadrado, ~400x400)
+         2. cambiar el <div class="testimonial-avatar">✦</div> por
+            <img class="testimonial-avatar" src="assets/landing/testimonios/01.jpg" alt="Nombre Apellido">
+         3. reemplazar el <strong> con nombre y apellido, y el texto entre comillas
+  -->
+  <section id="testimonios" class="testimonials">
     <div class="container">
       <div class="section-header" data-aos="fade-up">
-        <p class="label">Voces del proceso</p>
-        <h2>Lo que pasa<br><em>adentro.</em></h2>
+        <p class="label">Lo que pasa dentro del Círculo</p>
+        <h2>Estaban donde<br><em>estás vos.</em></h2>
       </div>
       <div class="testimonials-grid">
+
         <article class="testimonial-card" data-aos="fade-up">
-          <div class="testimonial-mark">"</div>
-          <p>"Llegué buscando respuestas y terminé encontrándome a mí."</p>
+          <span class="testimonial-tag">Falta de dirección</span>
+          <div class="testimonial-mark">&ldquo;</div>
+          <p>Testimonio pendiente — tiene que contar cómo llegó sin saber hacia dónde iba y qué cambió.</p>
           <footer class="testimonial-footer">
             <div class="testimonial-avatar">✦</div>
-            <div><strong>Voz del proceso</strong><span>Círculo Humano</span></div>
+            <div><strong>Nombre Apellido</strong><span>Pendiente</span></div>
           </footer>
         </article>
-        <article class="testimonial-card" data-aos="fade-up" data-aos-delay="120">
-          <div class="testimonial-mark">"</div>
-          <p>"Pensé que necesitaba cambiar de trabajo. Descubrí que primero necesitaba cambiar la relación conmigo."</p>
+
+        <article class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+          <span class="testimonial-tag">Frustración con la vida actual</span>
+          <div class="testimonial-mark">&ldquo;</div>
+          <p>Testimonio pendiente — tiene que contar la frustración con la vida que tenía y qué se movió.</p>
           <footer class="testimonial-footer">
             <div class="testimonial-avatar">✦</div>
-            <div><strong>Voz del proceso</strong><span>Círculo Humano</span></div>
+            <div><strong>Nombre Apellido</strong><span>Pendiente</span></div>
           </footer>
         </article>
-        <article class="testimonial-card" data-aos="fade-up" data-aos-delay="240">
-          <div class="testimonial-mark">"</div>
-          <p>"Por primera vez sentí que podía hablar sin tener que demostrar nada."</p>
+
+        <article class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+          <span class="testimonial-tag">Búsqueda mental constante</span>
+          <div class="testimonial-mark">&ldquo;</div>
+          <p>Testimonio pendiente — tiene que contar años de buscar con la cabeza y cómo salió de ahí.</p>
           <footer class="testimonial-footer">
             <div class="testimonial-avatar">✦</div>
-            <div><strong>Voz del proceso</strong><span>Círculo Humano</span></div>
+            <div><strong>Nombre Apellido</strong><span>Pendiente</span></div>
           </footer>
         </article>
-        <article class="testimonial-card" data-aos="fade-up" data-aos-delay="120">
-          <div class="testimonial-mark">"</div>
-          <p>"Lo más valioso no fueron las herramientas. Fue descubrir que había otras personas viviendo exactamente lo mismo que yo."</p>
+
+        <article class="testimonial-card" data-aos="fade-up">
+          <span class="testimonial-tag">Sentirse solo en la búsqueda</span>
+          <div class="testimonial-mark">&ldquo;</div>
+          <p>Testimonio pendiente — tiene que contar la soledad del proceso y qué cambió al hacerlo en grupo.</p>
           <footer class="testimonial-footer">
             <div class="testimonial-avatar">✦</div>
-            <div><strong>Voz del proceso</strong><span>Círculo Humano</span></div>
+            <div><strong>Nombre Apellido</strong><span>Pendiente</span></div>
           </footer>
         </article>
+
+        <article class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+          <span class="testimonial-tag">Falta de propósito</span>
+          <div class="testimonial-mark">&ldquo;</div>
+          <p>Testimonio pendiente — tiene que contar el para qué que apareció y cómo lo encontró.</p>
+          <footer class="testimonial-footer">
+            <div class="testimonial-avatar">✦</div>
+            <div><strong>Nombre Apellido</strong><span>Pendiente</span></div>
+          </footer>
+        </article>
+
+        <article class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+          <span class="testimonial-tag">Claridad, energía y foco</span>
+          <div class="testimonial-mark">&ldquo;</div>
+          <p>Testimonio pendiente — tiene que contar la claridad, la energía y el foco que recuperó.</p>
+          <footer class="testimonial-footer">
+            <div class="testimonial-avatar">✦</div>
+            <div><strong>Nombre Apellido</strong><span>Pendiente</span></div>
+          </footer>
+        </article>
+
       </div>
     </div>
   </section>
 
-  <!-- ===== NO HACE FALTA ===== -->
-  <section class="lsec lsec--dark">
+  <!-- ===== 13 · PARA EMPEZAR (eliminar objeciones) ===== -->
+  <section id="para-empezar" class="lsec lsec--deep">
     <div class="section-header" data-aos="fade-up">
       <p class="label">Para empezar</p>
       <h2 class="title-light">No hace falta <em>prepararte.</em></h2>
     </div>
     <ul class="checklist" data-aos="fade-up">
-      <li class="no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14"/></svg> No hace falta saber meditar.</li>
-      <li class="no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14"/></svg> No hace falta haber hecho terapia.</li>
-      <li class="no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14"/></svg> No hace falta llegar "bien".</li>
-      <li class="no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14"/></svg> Ni siquiera hace falta tener tiempo o energía.</li>
-      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m5 12 5 5L20 6"/></svg> Solo hace falta estar dispuesto a mirarte con honestidad.</li>
+      <li class="no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M18 6 6 18M6 6l12 12"/></svg> Saber meditar.</li>
+      <li class="no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M18 6 6 18M6 6l12 12"/></svg> Haber hecho terapia.</li>
+      <li class="no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M18 6 6 18M6 6l12 12"/></svg> Tener mucho tiempo.</li>
+      <li class="no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M18 6 6 18M6 6l12 12"/></svg> Tener energía.</li>
+      <li class="no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M18 6 6 18M6 6l12 12"/></svg> Tener todo claro.</li>
     </ul>
-    <p class="checklist-note" data-aos="fade-up">Cada encuentro busca que te vayas con más claridad y más energía de la que trajiste.</p>
+    <p class="checklist-note" data-aos="fade-up">No tenés que tener todo claro. Solo se necesita dar un paso.</p>
   </section>
 
-  <!-- ===== CTA FINAL ===== -->
-  <section id="cta" class="cta-band">
+  <!-- ===== 14 · CTA FINAL ===== -->
+  <section id="sumarme" class="cta-band">
     <div class="cta-band-bg">
-      <img src="assets/landing/hero-retreat.jpg" alt="Encuentro de Círculo Humano en la naturaleza">
+      <img src="assets/landing/circle-grass.jpg" alt="">
     </div>
     <div class="cta-band-overlay"></div>
     <div class="cta-band-inner" data-aos="fade-up">
-      <img src="assets/brand/ouroboros-gold.png" alt="" style="width:54px;height:54px;margin:0 auto 1.5rem;opacity:.9;">
-      <h2 class="title-light">Si sentís que este espacio<br><em>es para vos…</em></h2>
-      <p>Nos encantaría recibirte.</p>
-      <a href="membresia.html#sumarme" class="btn btn--gold btn--lg">Quiero formar parte de Círculo</a>
+      <h2 class="title-light">De una vez<br><em>por todas.</em></h2>
+      <p>Si te gustaría de una vez por todas soltar lo obsoleto para dar espacio a lo nuevo, este espacio es para vos.</p>
+      <a href="#contacto" class="btn btn--gold btn--lg js-wa">Quiero formar parte</a>
+    </div>
+  </section>
+
+  <!-- ===== 15 · CONTACTO / REDES ===== -->
+  <section id="contacto" class="lsec lsec--dark">
+    <div class="section-header" data-aos="fade-up">
+      <p class="label">Contacto y redes</p>
+      <h2 class="title-light">¿Tenés dudas?<br><em>Escribinos.</em></h2>
+    </div>
+    <div class="contact-cards" data-aos="fade-up">
+      <a href="https://www.instagram.com/matirebozov" target="_blank" rel="noopener" class="contact-card">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="2" y="2" width="20" height="20" rx="6"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+        </div>
+        <div class="contact-info">
+          <strong>Matías en Instagram</strong>
+          <span>@matirebozov</span>
+        </div>
+        <span class="contact-arrow">→</span>
+      </a>
+      <!-- PENDIENTE (punto 15): confirmar el usuario de Instagram de Círculo Humano (js-ig-circulo) -->
+      <a href="https://www.instagram.com/circulohumano_academia" target="_blank" rel="noopener" class="contact-card js-ig-circulo">
+        <div class="contact-icon contact-icon--brand">
+          <img src="assets/brand/iso-ch.png" alt="">
+        </div>
+        <div class="contact-info">
+          <strong>Círculo en Instagram</strong>
+          <span class="js-ig-circulo-handle">@circulohumano_academia</span>
+        </div>
+        <span class="contact-arrow">→</span>
+      </a>
+      <!-- PENDIENTE (punto 15): el link del canal se carga desde assets/js/landing.js -> YT_MATIAS -->
+      <a href="https://www.youtube.com/@matirebozov" target="_blank" rel="noopener" class="contact-card js-yt">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="2" y="5" width="20" height="14" rx="4.5"/><path d="M10.2 9.3v5.4l4.6-2.7z" fill="currentColor" stroke="none"/></svg>
+        </div>
+        <div class="contact-info">
+          <strong>Matías en YouTube</strong>
+          <span>Canal de YouTube</span>
+        </div>
+        <span class="contact-arrow">→</span>
+      </a>
+      <a href="mailto:matiasrebozov@gmail.com" class="contact-card">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m2 6 10 8 10-8"/></svg>
+        </div>
+        <div class="contact-info">
+          <strong>Escribinos por mail</strong>
+          <span>matiasrebozov@gmail.com</span>
+        </div>
+        <span class="contact-arrow">→</span>
+      </a>
     </div>
   </section>
 
@@ -266,23 +412,27 @@
   <footer class="footer">
     <div class="footer-inner container">
       <div class="footer-brand">
-        <img src="assets/brand/ouroboros-gold.png" alt="Círculo Humano" class="footer-ouroboros">
+        <img src="assets/brand/logo-ch.png" alt="Círculo Humano" class="footer-ouroboros">
         <p class="footer-name">CÍRCULO HUMANO</p>
-        <p class="footer-tagline">Academia · Matías Rebozov</p>
+        <p class="footer-tagline">La comunidad · Matías Rebozov</p>
       </div>
       <nav class="footer-nav" aria-label="Footer">
-        <a href="index.html">Inicio</a>
-        <a href="#que-es">Qué es</a>
-        <a href="#incluye">Encuentros</a>
-        <a href="#voces">Voces</a>
-        <a href="membresia.html">Membresía</a>
+        <a href="#acompanamiento">Acompañamiento</a>
+        <a href="#de-que-se-trata">De qué se trata</a>
+        <a href="#matias">Quién acompaña</a>
+        <a href="#momentos">Momentos</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#contacto">Contacto</a>
       </nav>
       <div class="footer-social">
-        <a href="https://www.instagram.com/matirebozov" target="_blank" rel="noopener" aria-label="Instagram de Matías">
+        <a href="https://www.instagram.com/matirebozov" target="_blank" rel="noopener" aria-label="Instagram de Matías Rebozov">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="6"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
         </a>
-        <a href="https://www.instagram.com/circulohumano_academia" target="_blank" rel="noopener" aria-label="Círculo Humano Academia">
-          <img src="assets/brand/ouroboros-gold.png" alt="" class="footer-social-ouroboros">
+        <a href="https://www.instagram.com/circulohumano_academia" target="_blank" rel="noopener" aria-label="Instagram de Círculo Humano" class="js-ig-circulo">
+          <img src="assets/brand/iso-ch.png" alt="" class="footer-social-ouroboros">
+        </a>
+        <a href="https://www.youtube.com/@matirebozov" target="_blank" rel="noopener" aria-label="YouTube de Matías Rebozov" class="js-yt">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="5" width="20" height="14" rx="4.5"/><path d="M10.2 9.3v5.4l4.6-2.7z" fill="currentColor" stroke="none"/></svg>
         </a>
       </div>
       <p class="footer-copy">© 2025 Matías Rebozov · Círculo Humano. Todos los derechos reservados.</p>
@@ -292,10 +442,10 @@
   <!-- ===== STICKY CTA (mobile) ===== -->
   <div class="sticky-cta">
     <span>Sumate al Círculo</span>
-    <a href="membresia.html#sumarme" class="btn btn--gold">Quiero formar parte</a>
+    <a href="#contacto" class="btn btn--gold js-wa">Quiero sumarme</a>
   </div>
 
-  <!-- ===== CHATBOT ===== -->
+  <!-- ===== 16 · CHATBOT (oculto en mobile) ===== -->
   <div class="chatbot" id="chatbot-root">
     <button class="chatbot-btn" id="chatbot-toggle" aria-label="Abrir chat">
       <div class="chatbot-pulse" aria-hidden="true"></div>
@@ -304,7 +454,7 @@
     </button>
     <div class="chatbot-panel" id="chatbot-panel" aria-hidden="true">
       <div class="chatbot-head">
-        <img src="assets/brand/ouroboros-gold.png" alt="" class="chatbot-head-logo">
+        <img src="assets/brand/iso-ch.png" alt="" class="chatbot-head-logo">
         <div>
           <strong>Círculo Humano</strong>
           <span class="chatbot-status"><span class="status-dot"></span>En línea</span>
@@ -313,9 +463,9 @@
       <div class="chatbot-messages" id="chatbot-messages" role="log" aria-live="polite">
         <div class="cb-msg cb-msg--bot"><p>¡Hola! ¿Querés saber más sobre el Círculo Humano? 👋</p></div>
         <div class="cb-quickreplies" id="cb-quick">
-          <button data-msg="¿Qué incluye el Círculo Humano?">Qué incluye</button>
+          <button data-msg="¿Qué incluye el acompañamiento?">Qué incluye</button>
           <button data-msg="¿Cuándo son los encuentros?">Encuentros</button>
-          <button data-msg="Quiero sumarme a la membresía">Sumarme</button>
+          <button data-msg="Quiero sumarme al acompañamiento">Sumarme</button>
         </div>
       </div>
       <div class="chatbot-input-row">
@@ -329,8 +479,8 @@
 
   <!-- Scripts -->
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script src="assets/js/chatbot.js"></script>
-  <script src="assets/js/script.js"></script>
-  <script src="assets/js/landing.js?v=2"></script>
+  <script src="assets/js/chatbot.js?v=3"></script>
+  <script src="assets/js/script.js?v=2"></script>
+  <script src="assets/js/landing.js?v=6"></script>
 </body>
 </html>

@@ -120,7 +120,7 @@ AOS.init({
 
 /* --- Gallery: lightbox -------------------------------- */
 (function() {
-  const items = document.querySelectorAll('.gallery-item img');
+  const items = document.querySelectorAll('.gallery-item img, .moment img');
   if (!items.length) return;
 
   const lb = document.createElement('div');
@@ -189,7 +189,10 @@ AOS.init({
 /* --- Smooth scroll for all anchor links --------------- */
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
-    const target = document.querySelector(a.getAttribute('href'));
+    const href = a.getAttribute('href');
+    // href puede haber sido reescrito (ej: .js-checkout → URL de Mercado Pago)
+    if (!href || !href.startsWith('#') || href === '#') return;
+    const target = document.querySelector(href);
     if (target) {
       e.preventDefault();
       target.scrollIntoView({ behavior: 'smooth', block: 'start' });

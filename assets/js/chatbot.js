@@ -7,51 +7,47 @@
   const KB = [
     {
       keys: ['hola','hello','hey','buenas','buen','tarde','noche','mañana'],
-      reply: '¡Hola! Soy el asistente de Matías. ¿En qué puedo ayudarte? Podés preguntarme sobre sus programas, retiros, charlas o cómo contactarlo. 😊'
+      reply: '¡Hola! Soy el asistente del Círculo Humano. Puedo contarte qué incluye el acompañamiento, cuándo son los encuentros, cómo sumarte y más. ¿Qué querés saber? 🌿'
     },
     {
-      keys: ['coaching','qué hacés','que haces','hacés','haces','trabajo','servicios','ofrece','ofrecés'],
-      reply: 'Matías ofrece tres modalidades:<br>• <b>Coaching individual</b> (1:1 personalizado)<br>• <b>Círculo Humano Academia</b> (programa grupal)<br>• <b>Retiros en la naturaleza</b> (experiencias inmersivas)<br><br>¿Querés saber más de alguna?'
+      keys: ['incluye','acompanamiento','acompañamiento','membresia','membresía','que es','qué es','beneficio','beneficios','recibo','tiene'],
+      reply: 'El <b>acompañamiento del Círculo Humano</b> incluye:<br>• Sesión de bienvenida personalizada con Matías<br>• Encuentros en vivo todos los sábados, presenciales y online<br>• Acceso a todas las grabaciones<br>• Acceso a los cursos esenciales<br>• Comunidad<br>• Acompañamiento 24/7<br><br>Podés verlo completo en <a href="#acompanamiento">Acompañamiento</a>. 🐍'
     },
     {
-      keys: ['individual','sesión','sesion','1:1','proceso personal','uno a uno'],
-      reply: 'El <b>coaching individual</b> es un proceso 1:1 diseñado a medida. Trabajás directamente con Matías en lo que más importa transformar. Para consultar disponibilidad escribile a <a href="https://www.instagram.com/matirebozov" target="_blank">@matirebozov</a> 💬'
+      keys: ['encuentro','encuentros','cuando','cuándo','horario','sabado','sábado','vivo','online','presencial','hora'],
+      reply: 'Los <b>encuentros en vivo</b> son todos los <b>sábados</b>, presenciales y online. Y si no llegás en vivo, todas las grabaciones quedan disponibles. 🎥'
     },
     {
-      keys: ['academia','circulo','círculo','grupal','grupo','comunidad'],
-      reply: '<b>Círculo Humano Academia</b> es el programa grupal de desarrollo personal. Herramientas concretas, comunidad genuina y práctica sostenida. Un espacio para crecer rodeado de personas que también eligen crecer. 🐍'
+      keys: ['sumar','sumarme','pago','pagar','precio','costo','cuanto','cuánto','tarjeta','mercado','unirme','entrar','arranco','formar parte'],
+      reply: 'Para sumarte, tocá <a href="#acompanamiento">"Quiero sumarme al acompañamiento grupal"</a>: se abre un chat de WhatsApp con Matías. Ahí te responde las dudas y, si estás listo, te pasa el link de pago que corresponde a tu país. 💬'
     },
     {
-      keys: ['retiro','retiros','naturaleza','inmersivo','inmersiva','viaje'],
-      reply: 'Los <b>retiros</b> son experiencias inmersivas en la naturaleza que incluyen:<br>✦ Dinámicas de autoconocimiento<br>✦ Meditación y respiración consciente<br>✦ Integración grupal y cierre<br>✦ Desconexión digital total<br><br>Para fechas y disponibilidad contactá a Matías directamente.'
+      keys: ['academia','curso','cursos','clave','claves','ley','leyes','formacion','formación'],
+      reply: 'El acceso completo a los <b>cursos esenciales</b> está incluido en el acompañamiento: la práctica llevada más lejos, a tu ritmo. Mirá todo lo que incluye en <a href="#incluye">Qué vas a encontrar</a>. 📚'
     },
     {
-      keys: ['charla','conferencia','speaker','habla','universid','empresa'],
-      reply: 'Matías es <b>speaker</b> invitado en universidades, empresas y eventos. Sus charlas combinan experiencia real con herramientas prácticas que conectan. Para invitarlo, escribile a <a href="https://www.instagram.com/matirebozov" target="_blank">@matirebozov</a>.'
+      keys: ['para quien','para quién','me sirve','es para mi','es para mí','preparar','prepararme','requisito','requisitos'],
+      reply: 'Es para personas que sienten frustración con su vida actual y están en una búsqueda mental constante. <b>No hace falta prepararte</b>: ni saber meditar, ni haber hecho terapia, ni tener mucho tiempo, energía o todo claro. Solo se necesita dar un paso. ✨'
     },
     {
-      keys: ['precio','costo','cuánto','cuanto','vale','tarifa','dinero','inversión'],
-      reply: 'Para información de precios y disponibilidad te recomiendo escribirle directamente a Matías:<br>📸 <a href="https://www.instagram.com/matirebozov" target="_blank">@matirebozov</a><br>📧 <a href="mailto:matiasrebozov@gmail.com">matiasrebozov@gmail.com</a>'
+      keys: ['terapia','psico','terapeuta'],
+      reply: 'No es <b>terapia tradicional</b>, solitaria ni eterna. Es un espacio de práctica y comunidad para compartir el camino de manera amorosa, cuidada y divertida. 🐍'
     },
     {
-      keys: ['contacto','hablar','escribir','empezar','empezá','empezar','cómo arranco','arranco'],
-      reply: 'Podés contactar a Matías por:<br>📸 Instagram: <a href="https://www.instagram.com/matirebozov" target="_blank">@matirebozov</a><br>📧 Email: <a href="mailto:matiasrebozov@gmail.com">matiasrebozov@gmail.com</a><br><br>O ir directo a la sección <a href="#contacto">Contacto</a> de la web. 👇'
+      keys: ['matias','matías','rebozov','quien','quién','equipo','coach'],
+      reply: '<b>Matías Rebozov</b> se dedicó a la economía hasta los 32 años, cuando decidió soltarlo todo. De esa autoindagación nació el coaching y este espacio, que ya acompañó a cientos de personas. Acompaña junto a su equipo. Leelo en <a href="#matias">Quién acompaña</a>.'
     },
     {
-      keys: ['instagram','insta','redes','red social','social'],
-      reply: 'Seguí a Matías en Instagram: <a href="https://www.instagram.com/matirebozov" target="_blank">@matirebozov</a><br>Y a Círculo Humano: <a href="https://www.instagram.com/circulohumano_academia" target="_blank">@circulohumano_academia</a> 🌿'
-    },
-    {
-      keys: ['ouroboros','simbolo','símbolo','serpiente','logo','marca'],
-      reply: 'El <b>ouroboros</b> — la serpiente que se muerde la cola — es el símbolo de Círculo Humano. Representa el ciclo eterno de transformación: el proceso sin fin de convertirse en una versión más consciente de uno mismo. 🐍✨'
+      keys: ['contacto','hablar','escribir','instagram','insta','mail','email','duda','dudas','redes','youtube','video'],
+      reply: 'Encontranos en:<br>📸 <a href="https://www.instagram.com/matirebozov" target="_blank">Instagram de Matías</a><br>📸 <a href="https://www.instagram.com/circulohumano_academia" target="_blank">Instagram de Círculo Humano</a><br>▶️ <a href="https://www.youtube.com/@matirebozov" target="_blank">YouTube de Matías</a><br><br>O bajá hasta <a href="#contacto">Contacto</a>. 🌿'
     },
     {
       keys: ['gracias','genial','excelente','perfecto','buenísimo','buenisimo','ok','dale'],
-      reply: '¡De nada! Si tenés más preguntas, acá estoy. También podés contactar directamente a Matías en Instagram: <a href="https://www.instagram.com/matirebozov" target="_blank">@matirebozov</a> 🙌'
+      reply: '¡De nada! Si te quedan dudas, acá estoy. Y cuando quieras, te esperamos en el <a href="#acompanamiento">Círculo</a>. 🙌'
     }
   ];
 
-  const DEFAULT = 'No entendí bien tu pregunta, ¡disculpame! Podés escribirle directamente a Matías en Instagram: <a href="https://www.instagram.com/matirebozov" target="_blank">@matirebozov</a> 😊';
+  const DEFAULT = 'No entendí bien tu pregunta, ¡disculpame! Escribinos a <a href="https://www.instagram.com/circulohumano_academia" target="_blank">el Instagram de Círculo Humano</a> y te ayudamos. 🌿';
 
   function getReply(msg) {
     const q = msg.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
@@ -73,6 +69,10 @@
   const quick  = document.getElementById('cb-quick');
 
   if (!toggle || !panel || !msgs || !input) return;
+
+  /* --- Punto 16: el chat existe SOLO en desktop -------- */
+  const soloDesktop = () => !window.matchMedia('(max-width: 860px), (pointer: coarse) and (max-width: 1024px)').matches;
+  if (!soloDesktop() && root) { root.setAttribute('aria-hidden', 'true'); }
 
   /* --- Toggle ------------------------------------------ */
   toggle.addEventListener('click', () => {
@@ -137,7 +137,7 @@
   /* --- Auto-open greeting on scroll -------------------- */
   let autoOpened = false;
   window.addEventListener('scroll', () => {
-    if (autoOpened) return;
+    if (autoOpened || !soloDesktop()) return;
     if (window.scrollY > window.innerHeight * 0.7) {
       autoOpened = true;
       setTimeout(() => {
