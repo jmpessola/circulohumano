@@ -13,7 +13,7 @@
       Argentina: 54 + 9 + característica sin 0 + número sin 15.
       Ej: (11) 5555-4444  →  '5491155554444'
       Mientras esté vacío, los botones bajan a la sección Contacto.      */
-const WHATSAPP_NUM = '';   // ← ✏️ PEGAR ACÁ EL NÚMERO
+const WHATSAPP_NUM = '5491141906036';   // +54 9 11 4190-6036
 
 /* 2) Mensaje prearmado que le llega a Matías al abrir el chat.          */
 const WHATSAPP_MSG = 'Estoy listo para el acompañamiento grupal del Círculo Humano.';
