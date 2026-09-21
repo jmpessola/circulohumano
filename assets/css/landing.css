@@ -410,6 +410,20 @@
 .nav-links a { white-space: nowrap; font-size: .7rem; letter-spacing: .1em; }
 .nav-links a.nav-cta { font-size: .68rem; padding: .55rem 1.2rem; }
 
+/* --- Menú cerrado: que no ensanche el viewport ----------
+   El menú off-canvas es fixed con translateX(100%). Eso suma
+   scroll horizontal y, en mobile, Chrome AGRANDA el viewport
+   de maquetado (390 -> 472): el nav se recentra sobre el ancho
+   nuevo y queda corrido, con el botón hamburguesa fuera de
+   pantalla. overflow-x en <body> no lo ataja porque un fixed
+   no se recorta contra el body. Hay que ponerlo en <html>.
+   Y el menú cerrado se saca del foco/lectores.              */
+html { overflow-x: hidden; }
+.nav-links:not(.nav-links--open) { visibility: hidden; }
+@media (min-width: 1201px) {
+  .nav-links { visibility: visible !important; }
+}
+
 /* --- Anclas: que no queden tapadas por el nav fijo ------ */
 .lsec[id], .testimonials[id], .cta-band[id], .quote-band[id] { scroll-margin-top: 92px; }
 .anchor-alias { display: block; height: 0; scroll-margin-top: 92px; }
