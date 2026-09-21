@@ -19,9 +19,9 @@
   --muted:      #7A6D60;
   --text-dark:  #2A2420;
 
-  --font-serif: 'Cormorant Garamond', Georgia, serif;
-  --font-head:  'Playfair Display', Georgia, serif;
-  --font-ui:    'Inter', system-ui, sans-serif;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;   /* lectura larga en serif */
+  --font-head:  'Fraunces', Georgia, serif;              /* títulos */
+  --font-ui:    'Jost', system-ui, sans-serif;           /* cuerpo, labels, botones */
 
   --pad:        clamp(4rem, 8vw, 8rem);
   --inner:      min(1160px, 90vw);

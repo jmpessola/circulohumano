@@ -533,6 +533,14 @@ img.testimonial-avatar {
 .cta-band-inner .btn--lg { margin-top: .25rem; }
 .cta-band-overlay { background: linear-gradient(180deg, rgba(11,9,7,.78), rgba(11,9,7,.72) 50%, rgba(11,9,7,.9)); }
 
+/* --- Cursor propio: solo con mouse ----------------------
+   script.js sale temprano si el puntero no es fino, así que
+   en táctil el punto y el anillo dorados quedan parados en
+   0,0 y se ven como un cuarto de círculo en la esquina.     */
+@media (pointer: coarse), (hover: none) {
+  .cursor, .cursor-ring { display: none; }
+}
+
 /* --- 16 · CHAT CON IA: SOLO DESKTOP -------------------- */
 @media (max-width: 860px), (pointer: coarse) and (max-width: 1024px) {
   .chatbot { display: none !important; }
@@ -586,3 +594,74 @@ img.testimonial-avatar {
 @media (max-width: 340px) {
   .nav-logo-text { display: none; }
 }
+
+/* ======================================================
+   TIPOGRAFÍA 09-2026 — Fraunces (títulos) + Jost (cuerpo)
+   Reemplaza a Playfair Display + Inter.
+   Cormorant Garamond se queda SOLO para lectura larga en
+   serif (bajada del hero, leads, checklist).
+   ====================================================== */
+
+/* --- Fraunces también en los display que venían en serif -- */
+.lhero-title,
+.statement-quote,
+.quote-band-text,
+.philosophy-quote,
+.checklist-note,
+.highlight-stat .stat-num,
+.member-price .amount,
+.audience-num,
+.testimonial-mark {
+  font-family: var(--font-head);
+}
+
+/* --- Ejes de Fraunces por tamaño ------------------------
+   opsz: el diseño óptico (grande = más contraste y finura).
+   WONK: las formas "torcidas" que le dan el carácter; a
+   tamaño chico molestan, así que ahí va en 0.              */
+.lhero-title,
+.statement-quote,
+.quote-band-text,
+.philosophy-quote {
+  font-variation-settings: 'SOFT' 45, 'WONK' 1, 'opsz' 120;
+  font-weight: 400;
+  letter-spacing: -.022em;
+}
+h2, .cta-band-inner h2 {
+  font-variation-settings: 'SOFT' 45, 'WONK' 1, 'opsz' 72;
+  letter-spacing: -.018em;
+}
+h3,
+.feature-item h4,
+.faq-item summary,
+.footer-name,
+.chatbot-head strong {
+  font-variation-settings: 'SOFT' 30, 'WONK' 0, 'opsz' 28;
+  letter-spacing: -.005em;
+}
+.highlight-stat .stat-num,
+.member-price .amount,
+.audience-num,
+.checklist-note {
+  font-variation-settings: 'SOFT' 45, 'WONK' 1, 'opsz' 96;
+}
+/* la comilla decorativa de los testimonios */
+.testimonial-mark { font-variation-settings: 'SOFT' 60, 'WONK' 1, 'opsz' 144; }
+
+/* Fraunces tiene más color que Playfair: el título del hero
+   aguanta un punto menos de cuerpo sin perder presencia */
+.lhero-title--long { font-size: clamp(1.8rem, 3vw, 2.7rem); line-height: 1.18; }
+
+/* --- Jost: x-altura más baja que Inter ------------------
+   compensamos con un pelo más de cuerpo y de interlínea
+   en el texto corrido, y con un poco de tracking en los
+   textos chicos en mayúscula.                             */
+body { font-size: 16.5px; }
+.muted-body, .philosophy-body, .feature-item p,
+.testimonial-card p, .member-list li, .faq-answer,
+.audience-card p, .member-reassure { line-height: 1.82; }
+.label { letter-spacing: .22em; font-weight: 400; }
+.btn, .member-cta, .nav-links a { font-weight: 400; }
+.member-cta { letter-spacing: .12em; font-weight: 500; }
+.footer-name { letter-spacing: .25em; }
+.footer-nav a, .contact-info strong { letter-spacing: .09em; }
